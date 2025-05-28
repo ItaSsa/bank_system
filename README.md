@@ -9,27 +9,27 @@ Modern systems need a solid structure, and modeling ideas and solutions with UML
 ### Setting up the project using poetry
 - Install and configure poetry in your environment. [See documentation.](https://python-poetry.org/docs/)
 
-- After that We start a new project  and created a virtual environment: 
+- After that We start a new project and created a virtual environment : 
 
     ``` bash
        poetry init
 
-       poetry env  use 3.12.1
+       poetrytes env  use 3.12.1
+       
     ```
 
-### *"First write the tests"*
-    
+### First write the tests
+    Find my article about TDD [here]().
+
 #### Add pytest to the project:
     ``` bash
             poetry add --group dev pytest
     ```
 
-#### Writtin tests
-
-
 
 ### Here you will find :
 - MVC structure 
+- flake8 for code quality
 - TDD - Test-Driven Development
 - Testing using **pytest**
 - Swagger documentation using **fastapi**
