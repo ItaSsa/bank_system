@@ -1,6 +1,6 @@
 import pytest
 from bank_system.models.account import Account
-
+from bank_system.models.history import History
 
 @pytest.fixture
 # @pytest.fixture create one account object to be used for all tests
@@ -62,3 +62,13 @@ def test_balance_valid(account):
         Correct balance
     '''
     assert account.balance() == 0.0
+
+# # Testing History in Account
+# def test_deposit_registers_transaction_in_history(account):
+#     deposit = Deposit(value=100.0)
+#     account.history.add_transaction(deposit)
+
+#     # checking
+#     assert deposit in account.history.transactions
+#     assert len(account.history.transactions) == 1
+#     assert account.history.transactions[0].value == 100.0
